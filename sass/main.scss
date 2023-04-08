@@ -1,0 +1,96 @@
+// Variables
+
+$bg-body: hsl(212, 45%, 89%);
+$bg-component: hsl(0, 0%, 100%);
+$p-color: hsl(220, 15%, 55%);
+$a-color: hsl(228, 45%, 44%);
+$h-color: hsl(217, 45%, 22%);
+$component-width: 21rem;
+
+// CSS Reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Base Styling
+
+body,
+html {
+  font-family: "Outfit", sans-serif;
+  line-height: 1.4;
+  background: $bg-body;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Container Styling
+
+#container {
+  min-height: 97vh;
+  min-width: 100vw;
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+
+// Main Component Styling
+
+.c-wrap {
+  background: $bg-component;
+  padding: 1rem;
+  border-radius: 20px;
+  max-width: $component-width;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+
+  // Shadow Style
+
+  box-shadow: 5px 15px 20px 1px hsla(217, 45%, 22%, 0.05);
+
+  // Image Styling
+
+  .image {
+    img {
+      max-width: 100%;
+      height: 310px;
+      border-radius: 15px;
+    }
+  }
+
+  //   Text Styling
+
+  .text {
+    text-align: center;
+    padding: 1rem;
+    color: $h-color;
+
+    .h-lead {
+      font-size: 1.46rem;
+    }
+
+    .p-main {
+      font-size: 15px;
+      color: $p-color;
+      padding: 0.7rem;
+    }
+  }
+}
+
+// Footer Styling
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: $a-color;
+  }
+}
